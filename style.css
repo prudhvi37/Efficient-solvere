@@ -1,0 +1,287 @@
+html,body{
+	padding:0;
+	margin: 0;
+	height: 100%;
+    font-family: abel;
+}
+#main-header{
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    box-shadow: 2px 2px 10px grey;
+    z-index: 100;
+}   
+
+#main-header, #navbar{
+    display: flex;
+    flex-direction: column;
+}
+
+.sitelogo{
+    align-self: center;
+}
+#navbar li{
+    list-style-type:none;
+    align-self: center;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #313b70;
+}
+#navbar li a:hover{
+    color: #006699;
+}
+#main-content {
+    background: url("Effcientsolverebackground.jpg");
+    height: 100%;
+    width: 100%;
+    display: table;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-blend-mode: multiply;
+    background-color: #505451;
+}
+.main-content{
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    text-align: center;
+}
+.content-header{
+    font-size: 4em;
+}
+.content-caption{
+    font-size: 25px;
+}
+#content-layover{
+    padding: 25px 130px;
+    background-color: #0b364c;
+    color: white;
+}
+#content-layover h1{
+    font-weight: 100;
+}
+.headers{
+    text-align: center;
+    font-size: 2.5em;;
+    line-height: 2.5em;
+    padding: 96px 0px 13px 0px;
+}
+
+.product{
+    max-width: 100%;
+    margin-bottom: 6em;
+    padding-right: 3em;
+    margin-left: 3em;
+    text-align: center;
+    border-radius: 9px;
+}
+.product img{
+    width: 12em;
+    height: 12em;
+}
+.product p{
+    width: 100%;
+    color: brown;
+    font-size: 20px;
+    font-weight: 600;
+}
+#header-services, #header-contact{
+    background-color: #f1f1e8;
+}   
+
+.service-list{
+    margin: 0 auto;
+    max-width: 22em;
+    background-color: whi;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.service{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background-color: #428cf4;
+    width: 10em;
+    border: 4px solid white;
+    border-radius: 8px;
+    margin-left: 11px;
+    margin-top: 5px;
+}
+.service:hover{
+    background-color: white;
+    color: black;
+    transition: background-color 0.5s ease;
+}
+.owl-dots{
+    text-align: center;
+}
+.owl-dot{
+    /* font-size: 4em; */
+    margin-right: 25px;
+    background-color: grey;
+    border: 4px solid gray;
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+    display: inline-block;
+}
+.owl-dot.active{
+    color:black;
+}
+
+.contact-address address {
+    font-size: 14px;
+    line-height: 01;
+    background: white;
+    max-width: 10em;
+    padding: 50px 96px;
+    border-radius: 11px;
+    max-height: 121px;
+    margin: 0 0 51px 0;
+    display: table;
+      
+}
+
+.contact-address address .Mail-us{
+    text-decoration: underline;
+   
+} 
+
+#contact{
+    background-color: white;
+    padding: 25px 0px;
+}   
+form ul li {
+    list-style-type: none;
+    line-height: 1.3;
+}
+form input {
+    border-radius: 4px;
+    border: 2px solid #f1f1e8;
+    background-color: #f1f1e8;
+}
+form textarea{
+    background-color: #f1f1e8;
+        
+}
+.first-column, .second-column{
+    padding:0;
+}
+.send-button .submit{
+    min-height: 39px;
+    width: 10em;
+    background-color: #0d6ba2;
+    color: white;
+    border: 1px;
+    border-radius: 10px;
+}
+.send-button .submit:hover{
+    cursor: pointer;
+    background-color: #41a6f4;
+    transition: background-color 0.2s ease;
+}
+
+
+#map {
+    height: 30em;
+    width: 100%;
+}
+.google{
+    margin: 0 auto;
+    width: 66em;
+    border: 19px solid white;
+    background-color: white;
+}
+.findme{
+    text-align: center;
+}
+.google-map{
+    background-color: #f1f1e8;
+}
+.owl-dot:active{
+    background-color: red;
+    
+}
+.swipe{
+    display:none;
+}
+footer{
+    background-color: #f1f1e8;
+    text-align: right;
+    padding: 3em 35px 7px 0px;
+    font-size: 15px;
+}
+footer li a{
+    text-decoration: none;
+    color: black;
+}
+
+/*image hover effect on product images */
+.product img{
+   
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
+
+}
+.product:hover img{
+     -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.2);
+}
+
+/* gallery properties */
+.gallery-container{
+    max-width: 71%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}    
+
+
+.gallery {
+    position: relative;
+    line-height: 0;
+    margin-bottom: 2em;
+    max-width: 9em;
+    overflow: hidden;
+    max-height: 251px;
+}
+.gallery img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* ---- Photo Overlay ---- */
+.gallery-text {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0; 
+    left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0, .65);
+    opacity: 0;
+    transition: 1s;
+}
+.gallery-text:hover {
+    opacity: 1;
+    transform: overlay;
+}    
+.thankyou{
+    text-align: center;
+}
